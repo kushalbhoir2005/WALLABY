@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>WALLABY</title>
+  </head>
+  <style>
+    .star-rating {
+        direction: rtl;
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    .star-rating input {
+        display: none;
+    }
+
+    .star-rating label {
+        color: #ddd;
+        cursor: pointer;
+    }
+
+    .star-rating input:checked ~ label {
+        color: gold;
+    }
+
+    .star-rating input:checked ~ label:hover,
+    .star-rating input:checked ~ label:hover ~ label,
+    .star-rating input:hover ~ label,
+    .star-rating input:hover ~ label ~ label {
+        color: gold;
+    }
+</style>
+
+<body id="top">
+    <!--navbar-->
+    <section class="header_menu " id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+                <a class="navbar-brand p1-5 p1-small-0" >
+                  <alt><strong>WALLABY</strong></alt>
+                  </a>
+                
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto   ">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./src/sign in.html ">Sign in</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./src/about.html">About us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./src/contact.html">Contact us</a>
+                      </li>
+                    </ul>
+
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <a href="./src/search.html">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                    </a>
+                    <button class="btn btn-outline-success " type="submit">Search</button>
+                  </form>
+        </div>
+    </section>
+<br>
+
+    <!--slider-->
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div  class="col-md-12">
+        <section class="header_carousel " id="header_carousel">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                <img src="./image/picock yellow.jpg" class="d-block w-100 img img-fluid rounded" width="15px"  alt="imagess">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                <img src="./image/picock pink.jpg" class="d-block w-100 img img-fluid rounded" width="15px"  alt="imagess">
+              </button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                <img src="./image/picock red.jpg" class="d-block w-100 img img-fluid rounded" width="15px"  alt="imagess">
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./image/picock yellow.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="./image/picock pink.jpg" class="d-block w-100" >
+              </div>
+              <div class="carousel-item">
+                <img src="./image/picock red.jpg" class="d-block w-100" >
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </section>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-6"> 
+  <div class="row">
+    <div  class="col-md-12">
+      <div class="title mb-4">
+        <h3>Brand: WALLABY </h3>
+      </div>
+      <div class="desc">
+        <h4>
+          WALLABY KIDS Boys & Girls Watercolour Style Peacock Tshirt 100% Cotton Kids T-Shirt
+        </h4>
+        <h7>Grab this beautiful t-shirt featuring a Peacock artwork in watercolour painting style.
+          Wallaby Kids t-shirts are made keeping your child's comfort in mind, All our t-shirt's are made from Super Combed Bio-Washed Cotton fabric which have a Soft Feel, Colour Fastness and Longevity.
+          Rich colours which don't fade after multiple washes.
+          Please refer to the size guide image to find the size that will be the best fit for your child.</h7>
+      </div>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="5 stars">☆</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="4 stars">☆</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="3 stars">☆</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="2 stars">☆</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="1 star">☆</label>
+    </div>
+
+<div class="price mb-4">
+  <b> <span class="mr-1">$</span><span>15</span></b>
+</div>
+
+<div class="qty-section border-top pt-2 mb-2">
+  <label>Quantitiy</label>
+<div>
+<div class="mb-0 w-100">
+  <input class="Quantitiy text-center " min="0" max="10" name="Quantitiy" value="1" type="number">
+</div>
+    </div>
+  </div>
+  <br>
+  <div class="buy">
+    <a href="./src/cart.html" class="btn btn-primary shadow">Add to card</a>
+  </div>
+</div>
+</div>
+</div>
+
+<hr>
+      <!--blog-->
+      <div class="releated" >
+      <h4>Releated Products...</h4>
+      </div>
+
+      <div class="container my-4">
+        <div class="row mb-4">
+
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h5 class="card-text mb-auto"><strong>WALLABY KIDS Boys & Girls Cute Fox in Watercolour Style Nature Animal Theme 100% Cotton Unisex Kids T-Shirt.</strong></h5>
+                <p>
+                  Cute and colourful dragon creature monster themed printed cotton t-shirt featuring a cute fox in watercolour art style and awesome vibrant colours
+                </p>
+                <div class="price mb-4">
+                  <b> <span class="mr-1">$</span><span>15</span></b>
+                </div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="./src/fox.html">
+                <img  class="bd-placeholder-img" width="200" height="250" src="./image/fox.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h5 class="card-text mb-auto"><strong>WALLABY KIDS Boys & Girls Cute Watercolour Smiling Panda in Bamboo Forest 100% Cotton Unisex Kids T-Shirt.</strong></h5>
+                <p>
+                  Cute & Colourful t-shirt featuring a cute smiling panda bear sitting in a bamboo forest in beautiful vibrant colours.Wallaby Kids t-shirts are made keeping your child's comfort in mind.
+                 
+                </p>
+                <div class="price mb-4">
+                  <b> <span class="mr-1">$</span><span>15</span></b>
+                </div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="./src/panda.html">
+                <img class="bd-placeholder-img" width="200" height="250" src="./image/panda.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h5 class="card-text mb-auto"><strong>WALLABY KIDS Boys & Girls Cute Watercolour Bunny Rabbit 100% Cotton Unisex Kids T-Shirt.</strong></h5>
+                <p>
+                  Cute & Colourful t-shirt featuring a cute bunny rabbit in beautiful vibrant colours.
+ All our t-shirt's are made from Super Combed Bio-Washed Cotton fabric which have a Soft Feel, Colour Fastness and Longevity.
+                </p>
+                <div class="price mb-4">
+                  <b> <span class="mr-1">$</span><span>15</span></b>
+                </div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="./src/rabbit.html">
+                <img class="bd-placeholder-img" width="200" height="250" src="./image/rabbit.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <h5 class="card-text mb-auto"><strong>WALLABY KIDS Boys & Girls Watercolor Style Toucan Bird & Flowers 100% Cotton Unisex Kids T-Shirt.</strong></h5>
+                <p>
+                  Colourful artwork on a t-shirt featuring a Shark in front of an asteroid.child's comfort in mind, Colour Fastness and Longevity.
+Rich colours which don't fade after multiple washes.
+                </p>
+                <div class="price mb-4">
+                  <b> <span class="mr-1">$</span><span>15</span></b>
+                </div>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <a href="./src/bird.html">
+                <img class="bd-placeholder-img" width="200" height="250" src="./image/bird.jpg">
+              </a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!--heading-->
+      <div class="container my-4">
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">WALLABY KIDS Boys & Girls The Game of Chess Kids Cotton Hoodie. </h2>
+              <p class="lead">Cool t-hoodie that features a Chess game in a realistic monochromatic style, perfect for people who love the game of chess.
+                Wallaby Kids hoodies are made keeping your child's comfort in mind, All our hoodies are made from premium quality brushed fleece 300 GSM Super Combed Bio-Washed Cotton fabric with double stitched seam and derby ribbed waistline. which have a Soft Feel, Colour Fastness and Longevity.
+                Rich colours which don't fade after multiple washes. A must have for the chilly winter weather.</p>
+            </div>
+            <div class="col-md-5">
+              <a href="./src/chess.html">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./image/chess.jpg" >
+              </a>
+            </div>
+          </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">WALLABY KIDS Boys & Girls Cute Christmas Theme Santa Claus Party Kids Cotton Hoodie.</h2>
+            <p class="lead">Cute and colourful Christmas themed printed cotton hoodie featuring featuring Santa Claus and his gang having a christmas party. The perfect christmas themed hoodie to wear on Christmas, in awesome vibrant colours.
+              Wallaby Kids hoodies are made keeping your child's comfort in mind, All our hoodies are made from premium quality brushed fleece 300 GSM Super Combed Bio-Washed Cotton fabric with double stitched seam and derby ribbed waistline. which have a Soft Feel, Colour Fastness and Longevity.
+              Rich colours which don't fade after multiple washes. A must have for the chilly winter weather.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <a href="./src/Christmas .html">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./image/Christmas .jpg" >
+            </a>
+          </div>
+        </div>
+        
+        <div class="row featurette d-flex justify-content-center align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">WALLABY KIDS Boys & Girls Cute Astronaut Sitting on The Moon Space Solar System Theme Kids Cotton Hoodie.</h2>
+            <p class="lead">Cute and colourful space solar system themed printed cotton hoodie featuring a cute astronaut sitting on the moon, in awesome vibrant colours.
+              Wallaby Kids hoodies are made keeping your child's comfort in mind, All our hoodies are made from premium quality brushed fleece 300 GSM Super Combed Bio-Washed Cotton fabric with double stitched seam and derby ribbed waistline. which have a Soft Feel, Colour Fastness and Longevity.
+              Rich colours which don't fade after multiple washes. A must have for the chilly winter weather.</p>
+          </div>
+          <div class="col-md-5">
+            <a href="./src/Astronaut.html">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="./image/Astronaut .jpg" >
+            </a>
+          </div>
+        </div>
+      
+
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">WALLABY KIDS Boys & Girls Calvin & Hobbes Making Faces Kids Cotton Hoodie.</h2>
+          <p class="lead">Cute and colourful printed cotton hoodie featuring the beloved Calvin and Hobbes.
+            Wallaby Kids hoodies are made keeping your child's comfort in mind, All our hoodies are made from premium quality brushed fleece 300 GSM Super Combed Bio-Washed Cotton fabric with double stitched seam and derby ribbed waistline. which have a Soft Feel, Colour Fastness and Longevity.
+            Rich colours which don't fade after multiple washes. A must have for the chilly winter weather.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <a href="./src/tiger.html">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto " width="500" height="500" src="./image/tiger.jpg" >
+          </a>
+        </div>
+      </div>
+
+      </div>
+<hr>
+      <!--footer-->
+      <div class="row ">
+        <div class="col-6 col-md d-flex justify-content-center align-items-center">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><h5><strong>Features</strong></h5></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Soft cotton</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool designs</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Quality</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Love colors</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md d-flex justify-content-center align-items-center">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><h5><strong>Resources</strong></h5></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">India,U.S</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Gujarat</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Texas</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Bukhara</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md d-flex justify-content-center align-items-center">
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><h5><strong>About</strong></h5></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">WALLABY</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">India</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Private limited</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Kushal Navin Bhoir</a></li>
+          </ul>
+        </div>
+      </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+        background: #fff;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .total {
+        text-align: right;
+        padding: 15px;
+        font-weight: bold;
+      }
+      .btn {
+        background: #333;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .btn:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Shopping Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item 1</td>
+            <td>2</td>
+            <td>$15.00</td>
+            <td>$23.00</td>
+          </tr>
+          <tr>
+            <td>Item 2</td>
+            <td>1</td>
+            <td>$15.00</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <td>Item 3</td>
+            <td>3</td>
+            <td>$23.00</td>
+            <td>$15.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="total">Subtotal: $106.00</div>
+      <a href="/src/checkout.html" class="btn">Proceed to Checkout</a>
+    </div>
+  </body>
+</html>

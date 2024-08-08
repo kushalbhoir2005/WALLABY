@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Search Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: beige;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        width: 350px;
+        height: 520px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 4px 4px 10px rgb(100, 81, 81);
+        overflow-y: scroll;
+      }
+
+      .search-bar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .search-bar input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .search-bar button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .product {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .product img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .product {
+        padding-left: 15px;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for products..."
+        />
+        <button onclick="searchProducts()">Search</button>
+      </div>
+      <div class="product-list">
+        <a href="/src/index.html">
+          <div class="product">
+            <img src="/image/picock yellow.jpg" />
+            <div class="product details">
+              <h2>Cute picock t-shirt</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/Astronaut.html">
+          <div class="product">
+            <img src="/image/Astronaut pink.jpg" />
+            <div class="product details">
+              <h2>Cute astronaut hoddie</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/fox.html">
+          <div class="product">
+            <img src="/image/fox red.jpg" />
+            <div class="product details">
+              <h2>Cute fox t-shirt</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/panda.html">
+          <div class="product">
+            <img src="/image/panda yellow.jpg" />
+            <div class="product details">
+              <h2>Cute panda t-shirt</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/tiger.html">
+          <div class="product">
+            <img src="/image/tiger red.jpg" />
+            <div class="product details">
+              <h2>Cute tiger hoddie</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/rabbit.html">
+          <div class="product">
+            <img src="/image/rabbit.jpg" />
+            <div class="product details">
+              <h2>Cute rabbit t-shirt</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/Christmas .html">
+          <div class="product">
+            <img src="/image/Christmas .jpg" />
+            <div class="product details">
+              <h2>Cute christmas hoddie</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/bird.html">
+          <div class="product">
+            <img src="/image/bird blue.jpg" />
+            <div class="product details">
+              <h2>Cute bird t-shirt</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="product-list">
+        <a href="/src/chess.html">
+          <div class="product">
+            <img src="/image/chess.jpg" />
+            <div class="product details">
+              <h2>Cute chess hoddie</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

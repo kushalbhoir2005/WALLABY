@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Successful</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+        background: #fff;
+        text-align: center;
+      }
+      h2 {
+        color: #4caf50;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+      .order-summary {
+        background: #f9f9f9;
+        padding: 20px;
+        margin: 20px 0;
+      }
+      .order-summary h3 {
+        margin-bottom: 10px;
+      }
+      .order-summary ul {
+        list-style: none;
+        padding: 0;
+      }
+      .order-summary ul li {
+        margin-bottom: 10px;
+      }
+      .btn {
+        background: #333;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+      }
+      .btn:hover {
+        background: #555;
+      }
+      .btn:link,
+      .btn:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Thank You for Your Order!</h2>
+      <p>
+        Your order has been placed successfully. You will receive a confirmation
+        email shortly.
+      </p>
+
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <ul>
+          <li>Order Number: 123456</li>
+          <li>Date: June 16, 2024</li>
+          <li>Item 1: $10.00</li>
+          <li>Item 2: $15.00</li>
+          <li>Item 3: $21.00</li>
+          <li>Shipping: $5.00</li>
+          <li><strong>Total: $51.00</strong></li>
+        </ul>
+      </div>
+
+      <a href="/src/cart.html" class="btn">View My Orders</a>
+      <a href="/src/index.html" class="btn">Continue Shopping</a>
+    </div>
+  </body>
+</html>
